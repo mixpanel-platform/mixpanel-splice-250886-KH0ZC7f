@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: auto;">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.css">
     <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://d621cde4587c562960fbe230744f42dc2304ca4f.googledrive.com/host/0BxwayM8qQaCVX0w4RExCOVdhbzQ">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/ac3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://d621cde4587c562960fbe230744f42dc2304ca4f.googledrive.com/host/0BxwayM8qQaCVX0w4RExCOVdhbzQ">
     <link rel="stylesheet" type="text/css" href="https://a7fd22d7f1e3c3ec503950ff3eb0ca354866665d.googledrive.com/host/0BxwayM8qQaCVMk14UTA0V2JuSVU">
     <link rel="stylesheet" type="text/css" href="https://5a4961e5c9f1459a1c463234568af125d8e1b386.googledrive.com/host/0BxwayM8qQaCVRmRCSDlXUUtMMnc/">
     <link rel="stylesheet" type="text/css" href="https://201420392a7158f07d53a8f3e71606645ab03bd2.googledrive.com/host/0BxwayM8qQaCVQldvY2U5Um9FN3M">
@@ -17,10 +17,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
   </head>
-  <body class="mixpanel-platform-body">
+  <body class="mixpanel-platform-body" style="height: auto">
     <div class="mixpanel-platform-section">
       <div class="content-wrapper">
-            <div class="content-heading text-center">
+            <div class="content-heading text-center clearfix">
                <!-- START Language list-->
                <div class="pull-right" style="bottom: 10px;">
                   <img src="https://d018d7277c9a2a72c253b637c4abe4d24d29449c.googledrive.com/host/0BxwayM8qQaCVOGZvekkxYTNSZVU" height="40px" width="120px">
@@ -102,20 +102,20 @@
                </div>
             </div>
 
-      <div style="clear: both;"></div>
-      <div class="actives" style="margin: auto; max-width: 98%;">
+      <!--<div style="clear: both;"></div>-->
+      <div class="actives clearfix" style="margin: auto; max-width: 98%;">
         <div style="float: left;  padding-top: 7px; padding-bottom: 7px; padding-right: 3px; max-width: 48%;" id="weeklyActiveUsers" align="right"></div>
         <div style="float: right;  padding-top: 7px; padding-bottom: 7px; padding-left: 3px; max-width: 48%;" id="monthlyActiveUsers" align="left"></div>
       </div>
-      <div class="newUsers" style="margin: auto; max-width: 98%;">
+      <div class="newUsers clearfix" style="margin: auto; max-width: 98%;">
         <div style="float: left;  padding-top: 7px; padding-bottom: 7px; padding-right: 3px; max-width: 48%;" id="weeklyNewUsers" align="right"></div>
         <div style="float: right;  padding-top: 7px; padding-bottom: 7px; padding-left: 3px; max-width: 48%;" id="monthlyNewUsers" align="left"></div>
       </div>
-      <div class="newUsersOverActiveUsers" style="margin: auto; max-width: 98%;">
+      <div class="newUsersOverActiveUsers clearfix" style="margin: auto; max-width: 98%;">
         <div style="float: left;  padding-top: 7px; padding-bottom: 7px; padding-right: 3px; max-width: 48%;"  id="weeklyActiveAndNewPercentage" align="right"></div>
         <div style="float: right;  padding-top: 7px; padding-bottom: 7px; padding-left: 3px; max-width: 48%;" id="MonthlyActiveAndNewPercentage" align="left"></div>
       </div>
-      <div class="DAUsMAUs" style="margin: auto; max-width: 98%;">
+      <div class="DAUsMAUs clearfix" style="margin: auto; max-width: 98%;">
         <div style="float: left;  padding-top: 7px; padding-bottom: 20px; padding-right: 3px; max-width: 48%;" id="dau-over-mau-graph" align="right"></div>
         <div style="float: right;  padding-top: 7px; padding-bottom: 20px; padding-left: 3px; max-width: 48%;" id="dau-over-mau-graph-2" align="left"></div>
       </div>
@@ -711,6 +711,9 @@
                               }
                           }]
                       },
+                      credits: {
+                          enabled: false
+                      },
                       series: [{
                           type: 'column',
                           name: eventsArray[0],
@@ -856,6 +859,9 @@
                   scale: 3,
                   fallbackToExportServer: false
                 },
+                credits: {
+                        enabled: false
+                },
                 title: {
                     text: 'Monthly Active Users'
                 },
@@ -869,7 +875,7 @@
                 },
                 series: [{
                     type: 'spline',
-                    name: 'Monthly Acitive Users',
+                    name: 'Monthly Active Users',
                     data: monthlyUniquesYAxis
                 }],
                  exporting: {
@@ -919,6 +925,9 @@
                         title: {
                             text: 'New Users Per Month'
                         },
+                        credits: {
+                          enabled: false
+                        },
                         xAxis: {
                             categories: monthlyNewUserxAxis
                         },
@@ -966,7 +975,9 @@
                       title: {
                           text: 'New Monthly Users Over Monthly Active User'
                       },
-                      
+                      credits: {
+                          enabled: false
+                      },
                       xAxis: {
                           categories: monthlyNewUserxAxis
                       },
@@ -1020,6 +1031,9 @@
               title: {
                   text: 'Weekly Active Users'
               },
+              credits: {
+                          enabled: false
+              },
               xAxis: {
                   categories: weeklyUniquesXAxis
               },
@@ -1030,7 +1044,7 @@
               },
               series: [{
                   type: 'spline',
-                  name: 'Weekly Acitive Users',
+                  name: 'Weekly Active Users',
                   data: weeklyUniquesYAxis
               }],
                exporting: {
@@ -1097,7 +1111,9 @@
                             title: {
                                 text: 'New Weekly Users Over Weekly Active User'
                             },
-                            
+                            credits: {
+                                enabled: false
+                            },
                             xAxis: {
                                 categories: weeklyNewUserxAxis
                             },
@@ -1269,6 +1285,9 @@
                         text: '% DAU over MAU'
                     }
                   },
+                  credits: {
+                      enabled: false
+                  },
                   tooltip:{
                     shared: true,
                     valueDecimals: 1,
@@ -1431,6 +1450,9 @@
                       title: {
                           text: '% DAU over MAU'
                       }
+                    },
+                    credits: {
+                          enabled: false
                     },
                     tooltip:{
                       shared: true,
